@@ -71,19 +71,19 @@
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="cuM-gM-OjO">
                                 <rect key="frame" x="135" y="285" width="265" height="31"/>
                                 <connections>
-                                    <action selector="redSliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="qGO-xN-7up"/>
+                                    <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="OkL-Nu-KXL"/>
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="F5m-JY-IRo">
                                 <rect key="frame" x="135" y="329" width="265" height="31"/>
                                 <connections>
-                                    <action selector="greenSliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="2Bh-D6-JLu"/>
+                                    <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="KRm-oi-s8u"/>
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="PN9-e1-AD6">
                                 <rect key="frame" x="135" y="371" width="265" height="31"/>
                                 <connections>
-                                    <action selector="blueSliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="fjR-ge-26v"/>
+                                    <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="eY0-Y4-rd9"/>
                                 </connections>
                             </slider>
                         </subviews>
@@ -123,11 +123,11 @@
                     </view>
                     <connections>
                         <outlet property="blueLabel" destination="FdU-T2-PhS" id="w0O-w4-CKI"/>
-                        <outlet property="blueSlider" destination="PN9-e1-AD6" id="urk-E8-7SD"/>
+                        <outlet property="blueSlider" destination="PN9-e1-AD6" id="CwP-uz-sIJ"/>
                         <outlet property="greenLabel" destination="qVj-jH-Je0" id="P7A-OO-1FR"/>
-                        <outlet property="greenSlider" destination="F5m-JY-IRo" id="L45-QG-6eW"/>
+                        <outlet property="greenSlider" destination="F5m-JY-IRo" id="EvN-NE-tAE"/>
                         <outlet property="redLabel" destination="rlD-gh-RtH" id="bYP-vB-eGa"/>
-                        <outlet property="redSlider" destination="cuM-gM-OjO" id="HoG-2D-WIb"/>
+                        <outlet property="redSlider" destination="cuM-gM-OjO" id="39K-lM-xbj"/>
                         <outlet property="sliderCounterBlue" destination="NLa-8S-BrO" id="FIR-e5-AiZ"/>
                         <outlet property="sliderCounterGreen" destination="VDg-SM-YU2" id="C3E-L3-u3W"/>
                         <outlet property="sliderCounterRed" destination="WgB-vd-5XA" id="cAk-sI-gbY"/>

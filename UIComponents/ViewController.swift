@@ -39,55 +39,61 @@ class ViewController: UIViewController {
         sliderCounterBlue.textAlignment = .center
         sliderCounterBlue.text = ""
         
-        
-        redSlider.value = 1
+
+//        redSlider.value = 1
         redSlider.minimumTrackTintColor = .red
-        redSlider.maximumValue = 100
-        redSlider.minimumValue = 1
-        
-        greenSlider.value = 1
+//        redSlider.maximumValue = 100
+//        redSlider.minimumValue = 1
+//
+//        greenSlider.value = 1
         greenSlider.minimumTrackTintColor = .green
-        greenSlider.maximumValue = 100
-        greenSlider.minimumValue = 1
-        
-        blueSlider.value = 1
+//        greenSlider.maximumValue = 100
+//        greenSlider.minimumValue = 1
+//
+//        blueSlider.value = 1
         blueSlider.minimumTrackTintColor = .blue
-        blueSlider.maximumValue = 100
-        blueSlider.minimumValue = 1
+//        blueSlider.maximumValue = 100
+//        blueSlider.minimumValue = 1
+        
+        
         
         
 
     }
     
-    @IBAction func redSliderAction(_ sender: Any) {
-        sliderCounterRed.text = String(Int(redSlider.value))
-        let redColor = CGFloat(redSlider.value / 100.0)
-        let greenColor = CGFloat(greenSlider.value / 100.0)
-        let blueColor = CGFloat(blueSlider.value / 100.0)
-        
-        let color = UIColor(red: redColor, green: greenColor, blue: blueColor, alpha: 1.0)
-        viewForColorChanging.backgroundColor = color
+    @IBAction func sliderAction(_ sender: UISlider) {
+        viewForColorChanging.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
     }
     
-    @IBAction func greenSliderAction(_ sender: Any) {
-        sliderCounterGreen.text = String(Int(greenSlider.value))
-        let redColor = CGFloat(redSlider.value / 100.0)
-        let greenColor = CGFloat(greenSlider.value / 100.0)
-        let blueColor = CGFloat(blueSlider.value / 100.0)
-        
-        let color = UIColor(red: redColor, green: greenColor, blue: blueColor, alpha: 1.0)
-        viewForColorChanging.backgroundColor = color
-    }
-    
-    @IBAction func blueSliderAction(_ sender: Any) {
-        sliderCounterBlue.text = String(Int(blueSlider.value))
-        let redColor = CGFloat(redSlider.value / 100.0)
-        let greenColor = CGFloat(greenSlider.value / 100.0)
-        let blueColor = CGFloat(blueSlider.value / 100.0)
-        
-        let color = UIColor(red: redColor, green: greenColor, blue: blueColor, alpha: 1.0)
-        viewForColorChanging.backgroundColor = color
-    }
+//    @IBAction func redSliderAction(_ sender: Any) {
+//        sliderCounterRed.text = String(Int(redSlider.value))
+//        let redColor = CGFloat(redSlider.value / 100.0)
+//        let greenColor = CGFloat(greenSlider.value / 100.0)
+//        let blueColor = CGFloat(blueSlider.value / 100.0)
+//
+//        let color = UIColor(red: redColor, green: greenColor, blue: blueColor, alpha: 1.0)
+//        viewForColorChanging.backgroundColor = color
+//    }
+//
+//    @IBAction func greenSliderAction(_ sender: Any) {
+//        sliderCounterGreen.text = String(Int(greenSlider.value))
+//        let redColor = CGFloat(redSlider.value / 100.0)
+//        let greenColor = CGFloat(greenSlider.value / 100.0)
+//        let blueColor = CGFloat(blueSlider.value / 100.0)
+//
+//        let color = UIColor(red: redColor, green: greenColor, blue: blueColor, alpha: 1.0)
+//        viewForColorChanging.backgroundColor = color
+//    }
+//
+//    @IBAction func blueSliderAction(_ sender: Any) {
+//        sliderCounterBlue.text = String(Int(blueSlider.value))
+//        let redColor = CGFloat(redSlider.value / 100.0)
+//        let greenColor = CGFloat(greenSlider.value / 100.0)
+//        let blueColor = CGFloat(blueSlider.value / 100.0)
+//
+//        let color = UIColor(red: redColor, green: greenColor, blue: blueColor, alpha: 1.0)
+//        viewForColorChanging.backgroundColor = color
+//    }
     
 }
 
